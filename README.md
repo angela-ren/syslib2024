@@ -5,7 +5,7 @@ This is a **test** file. **test** is in bold.
 I can do *italics*.
 
 If I put text in backticks for inline code foratting.
-For example, here is the 'Is' command.
+For example, here is the `Is` command.
 
 Or, I can do a code block:
 
