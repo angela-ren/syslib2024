@@ -18,10 +18,16 @@ for i in *; do
  1. items 1
  2. item 2
  3. item 3
+ 4. item 4
+ 5. item 5
+ 6. item 6
 
 - item a
 - item b
 - item c
+- item d
+- item e
+- item f
 
   Here is a link to my website: [Title] (https:www.example.com).
 
