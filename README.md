@@ -31,7 +31,7 @@ for i in *; do
 
   Here is a link to my website: [Title] (https:www.example.com).
 
-  Here is a image: ![University of Kentucky](https://uknow.uky.edu/sites/default/files/styles/uknow_story_image/public/KYCancampus2.jpg)
+  Here is a image: ![University of Kentucky] (https://uknow.uky.edu/sites/default/files/styles/uknow_story_image/public/KYCancampus2.jpg)
 
   ## this is the second heading
 
