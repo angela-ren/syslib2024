@@ -9,11 +9,11 @@ For example, here is the `Is` command.
 
 Or, I can do a code block:
 
-...
+```
 for i in *; do
  echo "$i"
  done
- ...
+ ```
 
  1. items 1
  2. item 2
