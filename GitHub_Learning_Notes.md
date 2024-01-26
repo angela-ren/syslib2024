@@ -8,7 +8,7 @@ GitHub is a hosting site for projects and repositories managed using `git`.
 
 Markdown is a simplified and highly versatile *markup* language.
 
-### Git Basics
+### GitHub Basics
 
 - Created an account on GitHub.
 - Followed Prof. Burns' demo and created a new repository on GitHub.
