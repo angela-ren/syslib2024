@@ -1,6 +1,6 @@
-#Nano Text Editor
+# Nano Text Editor
 
-##Here are some basic commands to get you started with Nano
+## Here are some basic commands to get you started with Nano.
 
 **1. Opening a File:**
 - To open a file with Nano, simply type nano followed by the filename:
