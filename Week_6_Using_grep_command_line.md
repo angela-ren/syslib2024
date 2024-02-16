@@ -8,9 +8,8 @@ In this document, I will show the basic use of `grep`commands to explore Scopus 
 ### 1. Search for a list of `grep` commands
 `grep --help` or `man grep`
 This command displays a brief summary of `grep` options and their usage.
-![grep commands]
+![grep commands] (Week 6_grep command line 1.JPG)
 ### 2. Search for an author
 `grep "author={Hughes" scopus2.bib`
 The command searches for entries with "Hughes" as an author. I received 1 result.
-
-
+![author search] 
