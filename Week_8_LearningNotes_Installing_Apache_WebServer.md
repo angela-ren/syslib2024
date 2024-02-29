@@ -16,11 +16,11 @@
 
 - ![image](https://github.com/angela-ren/syslib2024/assets/58860495/f7bdfa60-0aa9-42bd-9196-4db9814af845)
 
-## Basic Checks
+### Basic Checks
 - This is to make sure the server is up and running configure some basic things.
   `systemctl status apache2` This command is to acquire some info about **apache2** and make sure it is enabled and running.
 
-## Creating a Web Page
+### Creating a Web Page
 1. Text Based Web Browser
    There are a number of text based web browers available. Here using **w3m** as an example.
    `sudo apt install w3m` to install it.
@@ -43,6 +43,16 @@
    `sudo nano index. html`
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/7cf42877-01a5-4087-8c13-bbbb74552ac7)
+
+## Install PHP
+
+`sudo apt install php libapache2-mod-php`
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/da7d39ed-8c01-4b25-8ab3-7725f82d85d0)
+
+
+
+
 
 
 
