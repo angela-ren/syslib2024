@@ -70,16 +70,25 @@ I used this command `sudo service apache2 status` and got message "apache2 is ru
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/a9f8815c-d9f3-4a44-a34a-571f05de5b86)
 
+`apachectl configtest` to check out configuration
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/140e40d3-5272-4f91-bda4-37e869b40853)
+
+`sudo systemctl reload apache2`   `sudo systemctl restart apache2`
+
 4. Create an index.php file
 `cd /var/www/html/`   `sudo nano index.php` Added the html code, the following page displayed. Not sure why.
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/00908a8d-11f8-4812-bbcc-7c6852f4ed25)
 
 ## Installing and Configuring MySQL
+
 1. Install and Set Up MySQL
+ 
 `sudo apt install mysql-server` This is to install MySQL Community Server.
 
 `mysql -u root` received the MySQL prompt
+
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/b4e7ad13-a93e-4f54-b741-4c640d913cc9)
 
 `show databases` to request a list of the databases.
@@ -104,17 +113,6 @@ I used this command `sudo service apache2 status` and got message "apache2 is ru
 
 
 
-
-
-
-
-
-
-`apachectl configtest` to check out configuration
-
-![image](https://github.com/angela-ren/syslib2024/assets/58860495/140e40d3-5272-4f91-bda4-37e869b40853)
-
-`sudo systemctl reload apache2`   `sudo systemctl restart apache2`
 
 
 
