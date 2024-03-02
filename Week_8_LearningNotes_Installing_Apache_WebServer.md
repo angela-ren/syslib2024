@@ -103,7 +103,19 @@ I used this command `sudo service apache2 status` and got message "apache2 is ru
 
 3. Create a Practice Database
 
+`create database opacdb; grant all privileges on opacdb.* to 'opacuser'@'localhost'; show databases;`
+
+From the MySQL query prompt, run this command to create a new database opacdb and to grant all privileges to opacdb to the MySQL user opacuser.
+
+`\q` this is to exit out of the MySQL database as the **root MySQL user**, `exit`to exit out of the **root Linux user account**.
+
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/3fad2500-a5ea-483f-995b-9b6f17ecd90d)
+
+4. Logging in as Regular User and Creating Tables
+
+
+
+
 
 
 
