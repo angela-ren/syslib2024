@@ -44,11 +44,26 @@
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/7cf42877-01a5-4087-8c13-bbbb74552ac7)
 
-## Install PHP
+## Installing and Configure PHP
+
+1. Install PHP
 
 `sudo apt install php libapache2-mod-php`
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/da7d39ed-8c01-4b25-8ab3-7725f82d85d0)
+
+`sudo systemctl restart apache2` This command doesn't work on my computer. Having tried many times, I always got the message: 
+I used this command `sudo service apache2 status` and got message "apache2 is running."
+
+2. Check Install
+
+`cd /var/www/html/
+`sudo nano info.php` created a file called **info.php**
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/faeebbef-debf-4809-9b37-5d4d06bf22a1)
+
+
+
 
 
 
