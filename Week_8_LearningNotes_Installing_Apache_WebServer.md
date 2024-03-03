@@ -113,6 +113,139 @@ From the MySQL query prompt, run this command to create a new database opacdb an
 
 4. Logging in as Regular User and Creating Tables
 
+Steps to create a table in MySQL: your can enter the command in one line or multiple lines for easy reading when creating a table. By pressing Enter key, it moves to next line with a blank prompt -> which means continuing the command line.
+
+`mysql -u opacuser -p`   `show databases;`   `use opacdb;`
+
+`create table books (
+id int unsigned not null auto_increment,
+author varchar(150) not null,
+title varchar(150) not null,
+copyright date not null,
+primary key (id)
+);`
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/85eb2c70-8af9-4236-9430-016b3c725f14)
+
+`show tables ;`
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/015563ae-f489-4cc9-9e0f-e0ef05d5ab78)
+
+`describe books ;`
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/341593bf-58eb-4060-b0e9-500022057e4e)
+
+5. Adding records into the table
+
+Steps to insert a record: 
+`insert into books (author, title, copyright) values
+('Jennifer Egan', 'The Candy House', '2022-04-05'),
+('Imbolo Mbue', 'How Beautiful We Were', '2021-03-09'),
+('Lydia Millet', 'A Children\'s Bible', '2020-05-12'),
+('Julia Phillips', 'Disappearing Earth', '2019-05-14');`
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/05d512ee-34ca-4eae-b30a-be9c80d1d526)
+
+To view all the records: `select * from books ;`
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/c93a2540-2e70-4081-b083-6b2916f60bda)
+
+`alter table books add publisher varchar(75) after title;` to insert a publisher column.
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/0977cb11-e5fc-4fd8-b0a6-37a77f7d6439)
+
+To enter Publisher column data: `update books set publisher='Simon \& Schuster' where id='1';
+update books set publisher='Penguin Random House' where id='2';
+update books set publisher='W. W. Norton \& Company' where id='3';
+update books set publisher='Knopf' where id='4';
+select * from books;`
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/c2668ea0-85a8-4944-9d31-dc70529ddbb2)
+
+6. Install PHP and MySQL Support
+
+`sudo apt install php-mysql php-mysqli`   `sudo systemctl restart apache2` `sudo systemctl restart mysql`
+
+- Create PHP Scripts:
+  `cd /var/www/html/` `sudo touch login.php` `sudo chmod 640 login.php` `sudo chown :www-data login.php` `ls -l login.php`
+`sudo nano login.php`
+
+- Scripts for login.php file:
+
+<?php // login.php
+$db_hostname = "localhost";
+$db_database = "opacdb";
+$db_username = "opacuser";
+$db_password = "XXXXXXXXX";
+?>
+
+- Create a new PHP file for our website. This file will display HTML but will primarily be PHP interacting with our books database.
+`sudo nano opac.php` to create a file called **opac.php**.
+
+Scripts:
+
+<html>
+<head>
+<title>MySQL Server Example</title>
+</head>
+<body>
+<h1>A Basic OPAC</h1>
+<p>We can retrieve all the data from our database and book table
+using a couple of different queries.</p>
+<?php
+// Load MySQL credentials
+require_once 'login.php';
+// Establish connection
+$conn = mysqli_connect($db_hostname, $db_username, $db_password) or
+  die("Unable to connect");
+// Open database
+mysqli_select_db($conn, $db_database) or
+  die("Could not open database '$db_database'");
+echo "<h2>Query 1: Retrieving Publisher and Author Data</h2>";
+// Query 1
+$query1 = "select * from books";
+$result1 = mysqli_query($conn, $query1);
+while($row = $result1->fetch_assoc()) {
+    echo "<p>Publisher " . $row["publisher"] .
+        " published a book by " . $row["author"] .
+        ".</p>";
+}
+mysqli_free_result($result1);
+echo "<h2>Query 2: Retrieving Author, Title, Date Published Data</h2>";
+$result2 = mysqli_query($conn, $query1);
+while($row = $result2->fetch_assoc()) {
+    echo "<p>A book by " . $row["author"] .
+        " titled <em>" . $row["title"] .
+        "</em> was released on " . $row["copyright"] .
+        ".</p>";
+}
+// Free result2 set
+mysqli_free_result($result2);
+/* Close connection */
+mysqli_close($conn);
+?>
+</body>
+</html>
+
+- Save the file and exit out of `nano`.
+- `sudo php -f login.php`  `sudo php -f index.php`  to test the PHP syntax.
+
+Display on a webpage: external IP address/opac.php
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/058c6752-93c3-4ac6-9af0-35195b551d65)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
