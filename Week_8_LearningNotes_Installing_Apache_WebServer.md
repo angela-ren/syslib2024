@@ -286,6 +286,7 @@ Display on a webpage: external IP address/opac.php
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/058c6752-93c3-4ac6-9af0-35195b551d65)
 
+[Week 8 Learning Notes] (https://github.com/angela-ren/syslib2024/blob/main/Week_8_LearningNotes_Installing_Apache_WebServer.md)
 
 
 
