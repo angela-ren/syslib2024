@@ -77,9 +77,62 @@ I used this command `sudo service apache2 status` and got message "apache2 is ru
 `sudo systemctl reload apache2`   `sudo systemctl restart apache2`
 
 4. Create an index.php file
-`cd /var/www/html/`   `sudo nano index.php` Added the html code, the following page displayed. Not sure why.
 
-![image](https://github.com/angela-ren/syslib2024/assets/58860495/00908a8d-11f8-4812-bbcc-7c6852f4ed25)
+- `cd /var/www/html/`   `sudo nano index.php`   Add some HTML and PHP to it.
+  
+`<html>
+<head>
+<title>Broswer Detector</title>
+</head>
+<body>
+<p>You are using the following browser to view this site:</p>
+
+<?php
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
+
+if(strpos($user_agent, 'Edge') !== FALSE) {
+    $browser = 'Microsoft Edge';
+} elseif(strpos($user_agent, 'Firefox') !== FALSE) {
+    $browser = 'Mozilla Firefox';
+} elseif(strpos($user_agent, 'Chrome') !== FALSE) {
+    $browser = 'Google Chrome';
+} elseif(strpos($user_agent, 'Opera Mini') !== FALSE) {
+    $browser = "Opera Mini";
+} elseif(strpos($user_agent, 'Opera') !== FALSE) {
+    $browser = 'Opera';
+} elseif(strpos($user_agent, 'Safari') !== FALSE) {
+    $browser = 'Safari';
+} else {
+    $browser = 'Unknown';
+}
+
+if(strpos($user_agent, 'Windows') !== FALSE) {
+    $os = 'Windows';
+} elseif(strpos($user_agent, 'Linux') !== FALSE) {
+    $os = 'Linux';
+} elseif(strpos($user_agent, 'Mac') !== FALSE) {
+    $os = 'Mac';
+} elseif(strpos($user_agent, 'iOS') !== FALSE) {
+    $os = 'iOS';
+} elseif(strpos($user_agent, 'Android') !== FALSE) {
+    $os = 'Android';
+} else {
+    $os = 'Unknown';
+}
+
+if($browser === 'Unknown' || $os === 'Unknown') {
+    echo 'No browser detected.';
+} else {
+    echo 'Your browser is ' . $browser . ' and your operating system is ' . $os . '.';
+}
+?>
+
+</body>
+</html>`
+  
+- Save the file and exit nano. In your browser, visit your external IP address site.
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/b49b3515-a372-4665-bb97-6cc6331bbe4a)
 
 ## Installing and Configuring MySQL
 
