@@ -1,8 +1,8 @@
-# Week_8_Reflection
+# Week 8 Reflection
 
 Week 8 brought a challenging moment as I grappled with the PHP installation.
 While attempting to check Apache2 status using the command `Systemctl status apache2`, 
-I hit a roadblock – the system hadn't booted with systemd as the init system, and things spiraled downward. 
+I hit a hurdle – the system hadn't booted with systemd as the init system, and things spiraled downward. 
 I encountered issues like unrecognized services, non-existent directories, and the ominous "host is down." 
 It was days of frustration, feeling utterly lost. 
 Uncertain if my Google Cloud setup was at fault or if I was wandering in the command line wilderness, 
