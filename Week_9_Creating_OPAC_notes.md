@@ -4,9 +4,9 @@
 
 1. Create a basic HTML page that contains a form for entering queries
 
-`cd /var/www/html` `sudo nano mylibrary.html` Create **mylibrary.html**
+2. Create **mylibrary.html**      `cd /var/www/html`        `sudo nano mylibrary.html` 
 
-html for mylibrary.html
+3. Enter html script for **mylibrary.html**
 
 <html>
 <head>
@@ -69,7 +69,8 @@ of how an OPAC works, though.</p>
 </body>
 </html>
 
- `sudo search.php` Create **search.php** file
+ 4. Create **search.php** file    `sudo nano search.php` 
+
  PHP Search Script:
 
  <?php
@@ -129,12 +130,28 @@ echo "<p>Return to search page: <a href='http://34.162.161.60/mylibrary.html'>ht
 
 ?>
 
-**mylibrary.html**        **search.php** -- files are created.
+**mylibrary.html** and **search.php** -- files are created.
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/eacb612b-d0a5-4c10-bf69-8af576aa9fe3)
 
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/b97df836-90fb-455d-a079-5faf319d64e2)
+
+5. Adding records to table: Books
+
+- Log in MySQL  `mysql -u opacuser -p`
+- Added 5 records.
+- `insert into books (author, title, publisher, copyright) values`
+- ('Shameen Prashantham', 'Gorillas Can Dance', 'Wiley', '2021-01-01'
+  ('Jack Anderson', 'Ballet & Modern Dance : A Concise History', 'Princeton Book Company', '2018')
+  ('Dores M.Plunk-Burdick', 'Dance Therapist in Dimension : Depth and Diversity', 'American Dance Therapy Assoc', '1974'),
+  ('Jenefer Davies', 'Aerial Dance: A Guide to Dance with Rope and Harness', 'Routledge', '2018-09-30'),
+  ('Hilary French', 'Ballroom: A People’s History of Dancing', 'Reaktion Books', '2022-12-10');
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/ca06fee5-a023-46b7-8286-138340bcb814)
+
+
+
 
 
 
