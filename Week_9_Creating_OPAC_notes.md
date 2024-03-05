@@ -8,6 +8,8 @@
 
 3. Enter html script for **mylibrary.html**
 
+
+
 <html>
 <head>
 <title>MySQL Server Example</title>
@@ -68,6 +70,7 @@ of how an OPAC works, though.</p>
 
 </body>
 </html>
+
 
  4. Create **search.php** file    `sudo nano search.php` 
 
@@ -142,10 +145,14 @@ echo "<p>Return to search page: <a href='http://34.162.161.60/mylibrary.html'>ht
 - Log in MySQL  `mysql -u opacuser -p`
 - Added 5 records.
 - `insert into books (author, title, publisher, copyright) values`
-- ('Shameen Prashantham', 'Gorillas Can Dance', 'Wiley', '2021-01-01'
-  ('Jack Anderson', 'Ballet & Modern Dance : A Concise History', 'Princeton Book Company', '2018')
+  ` ('Shameen Prashantham', 'Gorillas Can Dance', 'Wiley', '2021-01-01'),
+  
+  ('Jack Anderson', 'Ballet & Modern Dance : A Concise History', 'Princeton Book Company', '2018'),
+  
   ('Dores M.Plunk-Burdick', 'Dance Therapist in Dimension : Depth and Diversity', 'American Dance Therapy Assoc', '1974'),
+  
   ('Jenefer Davies', 'Aerial Dance: A Guide to Dance with Rope and Harness', 'Routledge', '2018-09-30'),
+  
   ('Hilary French', 'Ballroom: A People’s History of Dancing', 'Reaktion Books', '2022-12-10');
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/ca06fee5-a023-46b7-8286-138340bcb814)
