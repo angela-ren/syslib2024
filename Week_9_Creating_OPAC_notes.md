@@ -71,10 +71,6 @@ of how an OPAC works, though.</p>
 </body>
 </html>
 
-
-
-
-
 4. Create **search.php** file    `sudo nano search.php` 
 
  PHP Search Script:
