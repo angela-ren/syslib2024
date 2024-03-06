@@ -53,6 +53,7 @@ in our <b>books</b> table.</p>
 <p>The key idea is to get a sense
 of how an OPAC works, though.</p>
 
+
 <h2>My Basic Library OPAC</h2>
 <form method="post" action="search.php">
     <label for="search">Search:</label>
@@ -67,12 +68,14 @@ of how an OPAC works, though.</p>
     <input type="submit" value="Search">
 </form>
 
-
 </body>
 </html>
 
 
- 4. Create **search.php** file    `sudo nano search.php` 
+
+
+
+4. Create **search.php** file    `sudo nano search.php` 
 
  PHP Search Script:
 
@@ -145,7 +148,8 @@ echo "<p>Return to search page: <a href='http://34.162.161.60/mylibrary.html'>ht
 - Log in MySQL  `mysql -u opacuser -p`
 - Added 5 records.
 - `insert into books (author, title, publisher, copyright) values`
-  ` ('Shameen Prashantham', 'Gorillas Can Dance', 'Wiley', '2021-01-01'),
+
+  ('Shameen Prashantham', 'Gorillas Can Dance', 'Wiley', '2021-01-01'),
   
   ('Jack Anderson', 'Ballet & Modern Dance : A Concise History', 'Princeton Book Company', '2018'),
   
@@ -156,6 +160,17 @@ echo "<p>Return to search page: <a href='http://34.162.161.60/mylibrary.html'>ht
   ('Hilary French', 'Ballroom: A People’s History of Dancing', 'Reaktion Books', '2022-12-10');
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/ca06fee5-a023-46b7-8286-138340bcb814)
+
+6. Accessed **mylibrary.html** through the browser, and practiced searching records I entered.
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/b5f4da99-4c09-44ad-bf9e-02cd3d40c51f)
+
+7. Practiced MySQL command:
+   - select * from books;
+   - delete from books where author='Dores M.Plunk-Burdick';
+   - insert into books (author, title, publisher, copyright) values
+
+
 
 
 
