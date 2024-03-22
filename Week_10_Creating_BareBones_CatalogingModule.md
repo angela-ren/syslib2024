@@ -1,11 +1,11 @@
 # Creating a Bare Bones Cataloging Module #
 
-- create a basic HTML page that contains a form for entering bibliographic data
-- The form that we create needs to mirror the data structure in the **books** table: author, title, publisher, copyright.
-- Create **index.html** page, create a new directory for this module:
+- Create a basic HTML page that contains a form for entering bibliographic data
+- The form needs to mirror the data structure in the **books** table: author, title, publisher, copyright.
+- Create **index.html** page: create a new directory for this module:
    `cd /var/www/html`
   `sudo mkdir cataloging`
-- Use nano to create the index.html file and add the content: `cd cataloging`  `sudo nano index.html`
+- Use `nano` to create the **index.html** file: `cd cataloging`  `sudo nano index.html`
 - In **index.html**, add the following content:
    
 <!DOCTYPE html>
@@ -39,6 +39,7 @@
 
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/59ce079a-6315-41a3-8c2f-7a03feccd147)
+
 
 - PHP Insert Script: in cataloging directory, `sudo nano insert.php`, copy the following script:
 
@@ -102,6 +103,7 @@ echo "<p>Return to the cataloging page: <a href='http://11.111.111.111/catalogin
 
   Back to cataloging directory `cd /var/www/html/cataloging`  `sudo nano .htaccess`
   Copy the following content to  **.htaccess:`
+  
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/5ba5976d-9d0f-410a-9056-66aa1c0864a3)
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/0dbc22f1-59c0-45a6-bdfd-869d1b46b1c3)
