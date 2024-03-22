@@ -38,9 +38,6 @@
 </html>
 
 
-![image](https://github.com/angela-ren/syslib2024/assets/58860495/59ce079a-6315-41a3-8c2f-7a03feccd147)
-
-
 - PHP Insert Script: in cataloging directory, `sudo nano insert.php`, copy the following script:
 
 <?php
@@ -76,10 +73,12 @@ if ($stmt->execute() === TRUE) {
 $stmt->close();
 $conn->close();
 
-echo "<p>Return to the cataloging page: <a href='http://11.111.111.111/cataloging/'>http://11.111.111.111/cataloging/</a></p>";
+echo "<p>Return to the cataloging page: <a href='http://11.111.111.111/cataloging/'>http://34.162.181.239/cataloging/</a></p>";
 ?>
 
-- Security
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/59ce079a-6315-41a3-8c2f-7a03feccd147)
+
+- Security: 
     Create a simple authorization mechanism.
   
     `sudo htpasswd -c /etc/apache2/ .htpasswd libcat`, enter a new password at the prompt.
