@@ -40,6 +40,7 @@
 
 - PHP Insert Script: in cataloging directory, `sudo nano insert.php`, copy the following script:
 
+```
 <?php
 
 // Load MySQL credentials
@@ -75,6 +76,7 @@ $conn->close();
 
 echo "<p>Return to the cataloging page: <a href='http://11.111.111.111/cataloging/'>http://34.162.181.239/cataloging/</a></p>";
 ?>
+```
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/59ce079a-6315-41a3-8c2f-7a03feccd147)
 
