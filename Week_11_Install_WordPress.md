@@ -1,5 +1,6 @@
-###Install WordPress###
+# Install WordPress #
 
+WordPress is completely new to me, but I heard this name many times and didn't know what its function is.
 
 Step 2: Download and Extract
 
