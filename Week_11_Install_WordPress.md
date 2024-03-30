@@ -1,4 +1,4 @@
-Install WordPress
+###Install WordPress###
 
 
 Step 2: Download and Extract
