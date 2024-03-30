@@ -1,3 +1,47 @@
+# Reflection on Installing WordPress
+
+After following Professor Burns's instructions, I finally managed to successfully install WordPress. Prior to this, WordPress was a completely unfamiliar term to me, despite hearing it mentioned numerous times. Now, I've learned that WordPress is a free and open-source content management system (CMS) that can function as a website builder.
+
+## Installation Steps
+
+### Step 1: Requirements Check
+
+To ensure our systems meet the installation requirements, we checked the PHP and MySQL versions:
+
+`sudo apt install php-curl php-xml php-imagick php-mbstring php-zip php-intl`
+
+`php --version`
+
+`mysql --version`
+
+Additional PHP modules were installed to enable WordPress to operate at full functionality:
+
+`sudo apt install php-curl php-xml php-imagick php-mbstring php-zip php-intl`
+
+### Step 2: Download and Extract
+Downloading and extracting WordPress was a straightforward process:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Install WordPress #
 
 WordPress is completely new to me, but I heard this name many times and didn't know what its function is.
