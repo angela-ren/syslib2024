@@ -1,4 +1,4 @@
-# Reflection on Installing WordPress
+# Notes on Installing WordPress
 
 After following Professor Burns's instructions, I finally managed to successfully install WordPress. Prior to this, WordPress was a completely unfamiliar software to me, despite hearing it mentioned numerous times. Now, I've learned that WordPress is a free and open-source content management system (CMS) that can function as a website builder.
 
