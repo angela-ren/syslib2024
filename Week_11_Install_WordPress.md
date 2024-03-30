@@ -21,71 +21,71 @@ Additional PHP modules were installed to enable WordPress to operate at full fun
 ### Step 2: Download and Extract
 Downloading and extracting WordPress was a straightforward process:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Install WordPress #
-
-WordPress is completely new to me, but I heard this name many times and didn't know what its function is.
-
-Step 2: Download and Extract
-
+`cd /var/www/html`
+`sudo wget https://wordpress.org/latest.tar.gz`
+`sudo tar -xzvf latest.tar.gz`
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/e19d63ed-94ff-43b4-8dcd-b47edd96c267)
 
-
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/3eb43946-a716-49de-835b-6f956edd30d9)
 
+### Step 3: Database Setup
 
+We created a database and a user for WordPress:
 
-Step 3: Create the database and a user
+`sudo su`   `mysql -u root`
+
+Then, we executed the following commands within the MySQL prompt:
+
+`create user 'wordpress'@'localhost' identified by 'XXXXXXXXX';` -- placed password (user password) in 'XXXXXXXXX'
+
+`create database wordpress;` -- create the database name as "wordpress"
+
+`grant all privileges on wordpress.* to 'wordpress'@'localhost';`
+
+`show databases;`   `\q`
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/9d4adb30-77d8-4367-8a21-4748d44fbe13)
 
+### Step 4: Configure wp-config.php
 
+We navigated to the WordPress directory and edited the wp-config.php file:
 
+`cd /var/www/html/wordpress` --- changed to the wordpress directory
 
+`sudo cp wp-config-sample.php wp-config.php` ----- Copy and rename the **wp-config-sample.php** file to **wp-config.php**.
 
-
-
-Step 4: set up wp-config.php
-
-
-open file using nano, add database name, user, and password
+`sudo nano wp-config.php` --- opened the file by using `nano`
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/46a4019a-6c65-4f66-9ec9-a1282852725d)
 
 
+Within the file, we updated the database name, username, and password fields. Additionally, we disabled FTP uploads by adding `define('FS_METHOD','direct');` at the end of the file.
 
-Step 6: change file ownership
+### Step 5: Optional
+We can rename the wordpress directory to something else.
+
+For example: 
+
+`sudo mv /var/www/html/wordpress /var/www/html/blog`  ---- change it to **blog**
+
+The URL would look like:  `http://11.111.111.11/blog`
+
+### Step 6: Adjust File Ownership
+
+File ownership was adjusted to ensure proper permissions:
 
 `sudo chown -R www-data:www-data /var/www/html/wordpress`
 
-Step 7: Run the Install Script
+### Step 7: Run the Install Script
+
+Finally, we accessed the WordPress installation page:
+
+http://34.162.196.225/wordpress/wp-admin/install.php   
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/95ad53fc-8176-4f43-ba53-f266b31a407d)
 
-Password for the Test Library: bOFVY^D(81(16^8g@(
-Site Title: Test Library
-Username: angelaren
+However, I encountered an error page indicating no connection with the database. After spending hours troubleshooting, I discovered that the issue was caused by an incorrectly entered password in the php file.
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/d196116f-425c-4ed2-b807-ba4ed646fbd0)
 
@@ -94,6 +94,61 @@ Username: angelaren
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/e0523ed9-452a-42ab-aeef-4d31ddaebd87)
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/615e6b19-4e7e-4a45-ae14-05dd6d933853)
+
+
+Overall, the installation process provided valuable hands-on experience.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
