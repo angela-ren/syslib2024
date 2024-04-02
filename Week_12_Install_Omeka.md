@@ -60,6 +60,13 @@ sudo chown -R www-data:www-data files`
 
 ## 6. Complete setup via web form:
 
+Received an error page.
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/6def8d7a-fa9f-40db-9dc8-c0bee06c442e)
+
+
+
+
 
 
 `
