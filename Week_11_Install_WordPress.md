@@ -99,6 +99,10 @@ However, I encountered an error page indicating no connection with the database.
 Overall, the installation process provided valuable hands-on experience.
 
 
+## Creating a WordPress page.
+
+
+http://34.162.196.225/wordpress/wp-admin/post.php?post=11&action=edit
 
 
 
