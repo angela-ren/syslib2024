@@ -1,3 +1,5 @@
+
+
 # Prerequisites
 Install `ImageMagick`: this is a suite of utilities to work with photo files. It's used by Omeka to create thumbnail images of any photo uploaded to the digital library.
 
@@ -61,6 +63,26 @@ username = "omeka_user"
 
 password = "your_password"  (create your own password)
 
+I spent a lot time on this **db.ini** file. Many syntax errors I encountered. Finally I got it corrected:
+
+```; Database Configuration File
+;
+; Omeka requires MySQL 5 or newer.
+;
+; To configure your database, replace the X's with your specific
+; settings. If you're unsure about your database information, ask
+; your server administrator, or consult the documentation at
+; <http://omeka.org/codex/Database_Configuration_File>.
+
+[database]
+host     = "localhost"
+username = "omeka_user"
+password = "(your own password)"
+dbname   = "omeka_db"
+prefix   = "omeka_"
+charset  = "utf8"
+```
+
 ## 4.Set file permissions:
 
 sudo chown -R www-data:www-data files`
@@ -74,6 +96,27 @@ sudo chown -R www-data:www-data files`
 ## 6. Complete setup via web form:
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/61bffc10-aa9c-4848-9fbe-8ee012683d4e)
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/b5adebdd-4757-426f-aca8-67c49f473b75)
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/0501ccd5-2f50-4f13-b4b4-f91aa134c40e)
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/40f6052c-97c7-4304-a78d-e459ad27e399)
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/e005620e-72f9-453f-b682-bc26918913ac)
+
+http://34.162.45.110/omeka/
+
+
+
+
+
+
+
+
+
+
+
 
 
 
