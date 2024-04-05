@@ -1,4 +1,6 @@
+**Reflection note:**
 
+While following the instructions to install Omeka, I found that most steps went smoothly, allowing me to progress through the installation process with relative ease. However, I encountered a significant hurdle during step 3, Configure database credentials, where I needed to configure the database credentials. Despite my efforts, I found myself stuck due to syntax errors in the db.ini file. This challenge required me to spend a lot of time going back and forth, attempting to troubleshoot and rectify the issue. Finaaly, I was able to solve the syntax issues and successfully complete the installation. Reflecting on this experience, I recognize the importance of attention to detail and not giving up when facing difficult technical problems.
 
 # Prerequisites
 Install `ImageMagick`: this is a suite of utilities to work with photo files. It's used by Omeka to create thumbnail images of any photo uploaded to the digital library.
