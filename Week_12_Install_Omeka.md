@@ -59,7 +59,7 @@ database = "omeka_db"
 
 username = "omeka_user"
 
-password = "your_password"
+password = "your_password"  (create your own password)
 
 ## 4.Set file permissions:
 
