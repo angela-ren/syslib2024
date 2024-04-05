@@ -1,3 +1,16 @@
+# Prerequisites
+Install `ImageMagick`: this is a suite of utilities to work with photo files. It's used by Omeka to create thumbnail images of any photo uploaded to the digital library.
+
+`sudo apt install imagemagick`
+
+Enable Apache `mod_rewrite`. This is an Apache module used to rewrite URLs. Omeka uses this to create appropriate, user friendly URLs for items and collections in its digital libraries.
+
+`sudo a2enmod rewrite`
+
+ Restart Apache after enabling **rewrite**
+
+ `sudo systemctl restart apache2`
+
 # Install Omeka
 
 ## 1. Create a new user and a new database in MySQL:
