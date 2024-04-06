@@ -107,7 +107,10 @@ sudo chown -R www-data:www-data files`
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/e005620e-72f9-453f-b682-bc26918913ac)
 
-http://34.162.45.110/omeka/
+
+http://34.162.150.82/omeka/
+
+
 
 
 
