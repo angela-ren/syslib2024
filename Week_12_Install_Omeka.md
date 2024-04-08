@@ -87,7 +87,7 @@ charset  = "utf8"
 
 ## 4.Set file permissions:
 
-sudo chown -R www-data:www-data files`
+`sudo chown -R www-data:www-data files`
 
 ## 5. Restart Apache and MySQL:
 
