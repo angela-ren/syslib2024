@@ -60,3 +60,21 @@ Click on the "Create" button to create the firewall rule.
 
 ## Install Koha Repo ##
 
+Server setup
+
+`sudo apt update`
+`sudo apt upgrade`
+`sudo apt autoremove -y && sudo apt clean`
+`sudo apt install gnupg2`
+`sudo reboot now`
+
+When I executed `sudo reboot now`, I got an error message: host is down. It wouldn't let me continue. I spent a lot of time trying to fix, but in vain. I deleted the instance and created a new one. But I still don't know what was the problem.
+
+Add Koha Repository: 
+
+
+
+
+
+
+
