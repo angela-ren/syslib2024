@@ -70,6 +70,13 @@ Server setup
 
 When I executed `sudo reboot now`, I got an error message: host is down. It wouldn't let me continue. I spent a lot of time trying to fix, but in vain. I deleted the instance and created a new one. But I still don't know what was the problem.
 
+angelazeng2003@koha-instance-20240411-182127:~$ sudo reboot now
+
+![image](https://github.com/angela-ren/syslib2024/assets/58860495/61292941-bab2-4856-baeb-f38bde0e5978)
+
+
+ 
+
 Add Koha Repository: 
 
 
