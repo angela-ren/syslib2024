@@ -150,10 +150,8 @@ Database settings
 
 ![image](https://github.com/angela-ren/syslib2024/assets/58860495/b6d2a7e8-3ed8-4d11-a9cd-6cbe3a10ae8c)
 
-(http://34.162.150.82:8080/cgi-bin/koha/catalogue/search.pl)
 
-
-
+OPAC http://34.162.150.82:8080/cgi-bin/koha/mainpage.pl
 
 
 
