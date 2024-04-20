@@ -17,3 +17,6 @@ wp-content: This directory contains your themes, plugins, uploads, and other sit
 wp-includes: This directory contains core WordPress files.
 wp-config.php: This file contains your WordPress configuration settings.
 
+My Library page:
+
+http://34.162.174.62/wordpress/
