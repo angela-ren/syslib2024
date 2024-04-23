@@ -17,6 +17,10 @@ wp-content: This directory contains your themes, plugins, uploads, and other sit
 wp-includes: This directory contains core WordPress files.
 wp-config.php: This file contains your WordPress configuration settings.
 
+- Connection lost keeps happening. Need to go back to VM Instance to restart Apache2.
+
+`sudo systemctl restart apache2`
+
 My Library page:
 
 http://34.162.174.62/wordpress/
